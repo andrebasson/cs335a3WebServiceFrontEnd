@@ -1,0 +1,62 @@
+<!--
+  -- AUTHOR: 		Andre Basson	
+  -- COURSE: 		Compsci 335
+  -- ASSIGNMENT:	3, part 1 (building a UI)
+  -- YEAR: 			2015 s2
+--> 
+
+<!DOCTYPE html>		<!-- document type declaration (DTD) -->
+<html>
+	<head>		
+		<meta name="viewport" content="width=device-width", minimum-scale=0.1">
+		<title>Bienvenue à la Boutique Casseé</title>		
+		
+		<!-- link to style sheet here, comment out if not applicable -->
+		<link rel="stylesheet" href="style.css">		
+		
+		<!-- Load your own scripts here -->
+		<script src="javascript.js"></script>		
+		
+		<script>
+			// on initial load, populate the table below with either books or blurays, depending on the dropdown box option
+			window.onload = function() { 			
+				// create the Shop Front UI & populate the output table
+				createShopFront();
+				displayItems(null);
+				
+				// display the web-service version in the footer
+				getVersion(null);			
+			}			
+		</script>		
+	</head>
+	
+	<body style="margin: 0px;">
+
+		<header></header>
+
+		<div id="logo1">
+			<img src="http://redsox.tcs.auckland.ac.nz/BC/Open/Service.svc/logo" alt="Picture Not Available">
+		</div>
+
+		<nav class="navBar">
+			<ul>
+					<li id="indexTab" onclick="createShopFront()">Your Shop</li>
+					<li id="registerTab" onclick="createRegistrationSection()">Join the Shop</li>
+					<li id="commentsTab" onclick="createCommentSection()">Your Comments</li>				
+			</ul>
+		</nav>
+
+		<section>
+			<!-- a place holder for HTML content to be created via JavaScript -->
+			<div id="output"></div>	
+		</section>
+
+		<!-- <aside></aside> -->
+
+		<footer>
+			<p id="registrationStatus"></p>
+			<p id="version"></p>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,134 @@
+/* 
+ * AUTHOR: 		Andre Basson	
+ * COURSE: 		Compsci 335
+ * ASSIGNMENT:	3, part 1 (building a UI)
+ * YEAR: 		2015 s2
+ */
+
+/* body tag selector */
+body {
+	/* values search in order stated, if neither first 2 found, common font (3rd value) selected */
+	font-family:		arial, helvetica, sans-serif;	
+
+	/* lengths and percentages */
+	font-size: 			14px;	/* px = pixel, pt = points, cm = centimeters, mm = millimeters */
+	
+	/* margins and padding to space-out elements*/	
+	/*margin:				20px;	/* spaces OUTSIDE */	
+	padding: 			0;		/* spaces INSIDE */
+	
+	/* MORE:  
+		margin-right	20px; 
+		margin-top 		20px; 
+		padding-bottom  40px; 
+		padding-top 	30px;		
+		etc. 
+	*/
+	
+	/*width: 960px;*/
+	width: 100%;
+	/*height:140px;*/
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	/*border: 0.35em solid black;*/
+	position: relative;
+	/*text-align: center;*/
+	
+}
+/*
+#formSearch {
+    width: 800px;
+	
+}
+*/
+
+
+/* horizontal list with effects */ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	margin:		20px;	/* spaces OUTSIDE */	
+	padding: 	0;		/* spaces INSIDE */  	
+}
+
+li {
+    float: left;	
+	display: block;
+    width: 300px;
+    font-weight: bold;
+	color: blue;
+	background-color: white;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+	
+}
+
+li:hover, li:active, li:visited {
+	background-color: rgba(0,0,255,0.3);
+}
+
+
+img {
+	/* margins and padding to space-out elements*/	
+	margin:		20px;	/* spaces OUTSIDE */	
+	padding: 	0;		/* spaces INSIDE */    
+	max-width: 	100%;
+}
+
+input , select {
+	margin:		5px;	/* spaces OUTSIDE */	
+	padding: 	0;		/* spaces INSIDE */    	
+}
+
+textarea {
+	color:	grey;
+	max-width: 100%;
+}
+
+#searchTextBox {
+	color:	grey;
+	max-width: 100%;
+}
+
+#usernameInput, #passwordInput {
+	position: right;
+	color:	grey;
+}
+
+#buynowImage {
+	width: /*auto*/100%;
+	height: /*auto*/100%;
+	max-width: 200px;
+	max-height: 60px;
+}	
+
+
+/*
+img[Attributes Style] {
+
+	width: 697px;
+    height: 174px;
+}
+*/
+
+footer {
+	position: absolute;
+	right: 0px;
+	padding: 10px;
+	
+  }
+  
+section  {
+	margin-left: 20px;	/* spaces OUTSIDE */	
+	padding: 10px;
+}
+
+#showTable {
+	margin-top: 20px;		
+}
+
